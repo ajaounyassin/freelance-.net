@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@source "../app/**/*.{tsx,ts,jsx,js}";
+@source "../components/**/*.{tsx,ts,jsx,js}";
+
+@theme {
+  --font-family-display: var(--font-display), system-ui, sans-serif;
+  --font-family-body: var(--font-body), system-ui, sans-serif;
+  --font-family-mono: var(--font-mono), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Base ─────────────────────────────────────────────────── */
+:root {
+  --ink: #0B0B0C;
+  --muted: #5E5E5E;
+  --line: #E4E4E1;
+  --mist: #F4F4F2;
+  --brand: #0B0B0C;
+  --brand-dark: #3A3A3A;
+  --accent: #C6F432;
+  --paper: #F4F4F2;
+}
+
+/* ── DA : titres étirés et libellés mono ──────────────────
+   Dans la couche components : les utilitaires Tailwind (taille, interlettrage)
+   peuvent ainsi les surcharger. */
+@layer components {
+  .h-wide {
+    font-family: var(--font-display), system-ui, sans-serif;
+    font-weight: 800;
+    font-stretch: 125%;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 1.02;
+  }
+
+  .label-mono {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.8125rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: #C6F432;
+}
+
+/* Titres étirés : plafond sur petit écran pour éviter les mots coupés */
+@media (max-width: 480px) {
+  h1.h-wide {
+    font-size: min(2.05rem, 9vw) !important;
+  }
+}
