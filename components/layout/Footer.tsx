@@ -7,6 +7,8 @@ const services = [
   { href: "/#offres", label: "Mission en régie" },
   { href: "/#offres", label: "Projet au forfait" },
   { href: "/#migration", label: "Migration vers .NET 10" },
+  { href: "/", label: "Développeur .NET à Strasbourg" },
+  { href: "/developpeur-dotnet-freelance-remote", label: "Développeur .NET en remote" },
   { href: "/#expertises", label: "Finance et monétique" },
 ];
 
