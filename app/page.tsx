@@ -30,6 +30,7 @@ const features = [
 ];
 
 const references = [
+  { org: "Blue Soft", detail: "Depuis 2025, applications du secteur financier" },
   { org: "Sogeti, groupe Capgemini", detail: "4 ans, référent technique monétique" },
   { org: "Transactis", detail: "Applications de paiement" },
   { org: "Groupe SII", detail: "Mission à la Cour européenne des droits de l'homme" },
@@ -366,7 +367,7 @@ export default function HomePage() {
             <h2 className={`${sectionTitle} mt-5`}>Consultant .NET freelance à Strasbourg, spécialisé finance et monétique</h2>
             <div className="mt-7 space-y-5 text-[1.0625rem] leading-[1.75] text-[#4A4A4A]">
               <p>
-                Je suis <strong className="font-semibold text-[#0B0B0C]">développeur .NET / C# freelance</strong> et j&apos;écris du C# depuis plus de dix ans. J&apos;ai passé quatre ans chez Sogeti, dans le groupe Capgemini, comme référent technique sur des applications monétiques. J&apos;ai ensuite travaillé chez Transactis, sur des applications de paiement, et en mission pour Groupe SII à la Cour européenne des droits de l&apos;homme.
+                Je suis <strong className="font-semibold text-[#0B0B0C]">développeur .NET / C# freelance</strong> et j&apos;écris du C# depuis plus de dix ans. J&apos;ai passé quatre ans chez Sogeti, dans le groupe Capgemini, comme référent technique sur des applications monétiques. J&apos;ai ensuite travaillé chez Transactis, sur des applications de paiement, et en mission pour Groupe SII à la Cour européenne des droits de l&apos;homme. Depuis 2025, je développe chez Blue Soft sur des applications du secteur financier.
               </p>
               <p>
                 Le paiement change la façon de coder. Une transaction ne se rejoue pas à la main, un arrondi faux finit dans un rapprochement comptable, un log mal placé peut exposer une donnée de carte. Je travaille avec ces contraintes par défaut, sans qu&apos;on ait à me les rappeler en revue de code.
