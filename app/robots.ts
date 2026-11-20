@@ -1,9 +1,8 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/site";
 
+// Site non lancé : aucune indexation. Remettre allow + sitemap au lancement.
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: { userAgent: "*", allow: ["/", "/_next/static/", "/_next/image"], disallow: ["/_next/"] },
-    sitemap: `${SITE_URL}/sitemap.xml`,
+    rules: { userAgent: "*", disallow: "/" },
   };
 }

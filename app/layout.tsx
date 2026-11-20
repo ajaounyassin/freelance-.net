@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   openGraph: { siteName: "Yassin Ajaoun, développeur .NET freelance", locale: "fr_FR", type: "website" },
   twitter: { card: "summary_large_image" },
+  // Site non lancé : noindex global. À retirer au lancement.
+  robots: { index: false, follow: false, googleBot: { index: false, follow: false } },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

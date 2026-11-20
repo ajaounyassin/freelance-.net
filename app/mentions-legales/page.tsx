@@ -5,7 +5,6 @@ export const metadata: Metadata = {
   title: "Mentions légales",
   description: "Mentions légales du site de Yassin Ajaoun, développeur .NET / C# freelance (FTNSolutions).",
   alternates: { canonical: `${SITE_URL}/mentions-legales` },
-  robots: { index: false, follow: true },
 };
 
 export default function MentionsLegalesPage() {
